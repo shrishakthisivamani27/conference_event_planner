@@ -1,338 +1,538 @@
-/* Venue selection styles */
-.venue_container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: -180px;
-    font-size: 24px;
-  }
-  
-  .venue_selection,.addons_selection , .meal_selection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 90vw;
-    margin-left: 250px;
-  }
-  
-  .venue_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
-    width: 300px;
-  }
-  .text h1{
-    width: 900px;
-    font-size: 40px;
-    background-color: #133b6a;
-    color: white;
-    width:990px;
-    height: 70px;
-    margin-left: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .venue_main .text {
-    font-size: 30px;
-    color: #333;
-  }
-  .quantity-value {
-    margin: 0 10px;
-  }
-  .main_container{
-    display: flex;    
-  }
-  .items-information {
-    display: flex;
-    flex-direction: column;
-    gap: 90px;
-    margin-top: 100px;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  .meal_item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .total_cost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-size: 30px;
-    color: #333;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 10px;
-    width: 400px;
-    margin-top: 15px;
-    margin-left: 190px;
-  }
-  
-  .av_data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    color: #000;
-  }
+/* ============================================
+   Conference Event Planner - Main Styles
+   Color Scheme: #133b6a (dark blue), 
+                 #EFC16B (gold), 
+                 #5291D9 (light blue),
+                 #f9f9f9 (light gray bg)
+   ============================================ */
 
-  .input-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 20px;
-  }
-  .input-container input {
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 13px;
-  }
-  .meal_selection {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-left: 280px;
-  }
-  .meal_selection input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-  }
-  .meal_selection label {
-    font-size: 25px;
-  }
-  .meal_item .inner {
-    display: flex;
-    flex-direction: row;
-  }
-  .meal_item .inner input {
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 5px;
-  }
-  .meal_item .meal_cost {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-    margin-left: 40px;
-  }
-  .venue_main .img img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  .display_box1 {
-    margin-top: 20px;
-    overflow-y: auto;
-    height: 300px;
-    scrollbar-width: thin;
-    scrollbar-color: #b7b4b4 transparent; 
-  }
-  
-  .display_box1::-webkit-scrollbar {
-    width: 8px; /* For Chrome, Safari, and Opera */
-  
-  }
-  
-  .display_box1::-webkit-scrollbar-track {
-    background-color: transparent; /* For Chrome, Safari, and Opera */
-    
-  }
-  
-  .display_box1::-webkit-scrollbar-thumb {
-    background-color: #ffffff; /* For Chrome, Safari, and Opera */
-  }
-  
-  .display_box1 {
-    padding-left: 20px;
-  }
-  .addons_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  .btn-success {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5291D9;
-    color: black;
-    border: none;
-    width: 10px;
-    height: 30px;
-     border-radius: 5px;
-    cursor: pointer;
-  }
-  .btn-warning {
-    background-color: #52D7D9;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    color: black;
-    width: 10px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .input-container .input_box5{
-    height: 40px;
-    width: 200px;
-    font-size: 20px;
-  }
-  
-  .items_view{
-    font-size: 20px;
-  }
-  .table_item_data {
-    width: 70vw;
-    border-collapse: collapse;
-    margin-left: -6px;
-    
-  }
-  
-  .table_item_data th,
-  .table_item_data td {
-    padding: 8px;
-    border: 1px solid #ddd;
-    font-size: 23px;
-    
-  }
-  
-  .table_item_data th {
-    background-color: #f2f2f2;
-  }
-  
-  .table_item_data tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .table_item_data tbody tr:hover {
-    background-color: #f2f2f2;
-  }
-  
-  .table_item_data tbody tr:first-child:hover {
-    background-color: transparent;
-  }
-  navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-    background-color:#133b6a;
-    color: white;
-    width: 100vw;
-  }
-  
-  .company_logo {
-    font-size: 30px;
-    color: #EFC16B;
-    font-weight: 700;
-  }
-  .nav_links{
-    display: flex;
-    gap: 170px;
-  }
-  .left_navbar{
-    width: 60vw;
-    display: flex;
-    gap: 180px;
-  
-  }
-  .nav_links a {
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-    transition: all 0.3s ease;
-    font-size: 25px;
-  }
-  
-  .nav_links a:hover {
-    color: #ff9900;
-  }
-  .button_container{
-    /* background-color: red; */
-    width:200px ;
-    display: flex;
-    gap: 20px;
-  }
-  .details_button {
-    padding: 8px 16px;
-    background-color: #EFC16B;
-    color: black;
-    /* border: 1px solid white; */
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    /* background-color: transparent; */
-  }
-  
-  
-  .navbar_event_conference{
-    position: fixed;
-    top: 1px;
-    z-index: 99;
-  }
-  .btn-disabled {
-    opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
-    cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
-  }
-  @media (max-width: 700px) {
-    navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px;
-        background-color: #133b6a;
-        color: white;
-        width: 100vw;
-    }
-    .nav_links {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .left_navbar {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 0;
-    }
-
+/* --- Navbar --- */
+nav.navbar_event_conference {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #133b6a;
+  color: white;
+  width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
+
+.company_logo {
+  font-size: 28px;
+  color: #EFC16B;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.left_navbar {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav_links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav_links a:hover {
+  color: #EFC16B;
+  border-bottom-color: #EFC16B;
+}
+
+.details_button {
+  padding: 10px 24px;
+  background-color: #EFC16B;
+  color: #1a1a2e;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.details_button:hover {
+  background-color: #d9a84e;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 193, 107, 0.4);
+}
+
+/* --- Main Layout --- */
+.main_container {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px; /* offset for fixed navbar */
+}
+
+.items-information {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px 20px 80px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* --- Section Headers --- */
+.container_main {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.text h1 {
+  display: inline-block;
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+  background-color: #133b6a;
+  padding: 16px 48px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 14px rgba(19, 59, 106, 0.3);
+}
+
+/* --- Venue / Add-ons / Meal Selection Grid --- */
+.venue_selection,
+.addons_selection,
+.meal_selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* --- Individual Cards --- */
+.venue_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
+  width: 280px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.venue_main:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.venue_main .img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.venue_main .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.venue_main:hover .img img {
+  transform: scale(1.05);
+}
+
+.venue_main .text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.venue_main > div:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 700;
+  color: #133b6a;
+}
+
+/* --- Button Container (Add/Remove) --- */
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.btn-plus,
+.btn-minus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.btn-success,
+.btn-plus {
+  background-color: #5291D9;
+}
+
+.btn-warning,
+.btn-minus {
+  background-color: #52D7D9;
+  color: #1a1a2e;
+}
+
+.btn-plus:hover,
+.btn-success:hover {
+  background-color: #3d7bbf;
+}
+
+.btn-minus:hover,
+.btn-warning:hover {
+  background-color: #3dc4c6;
+}
+
+.btn-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.selected_count,
+.quantity-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  min-width: 28px;
+  text-align: center;
+}
+
+/* --- Add-ons Specific --- */
+.addons_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+/* --- Total Cost Display --- */
+.total_cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #133b6a;
+  background-color: #ffffff;
+  border: 2px solid #133b6a;
+  border-radius: 12px;
+  padding: 14px 32px;
+  margin: 24px auto 0;
+  width: fit-content;
+  min-width: 300px;
+  box-shadow: 0 2px 10px rgba(19, 59, 106, 0.1);
+}
+
+/* --- Meal Section --- */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 20px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.input-container input {
+  width: 120px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  font-size: 18px;
+}
+
+.input-container .input_box5 {
+  height: 44px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+}
+
+.meal_selection input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #5291D9;
+}
+
+.meal_selection .venue_main {
+  width: 280px;
+}
+
+.meal_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meal_item .inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.meal_item .inner input {
+  width: 100px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  font-size: 16px;
+}
+
+.meal_item .meal_cost {
+  font-size: 20px;
+  font-weight: 600;
+  color: #133b6a;
+}
+
+/* --- Total Amount Detail (Show Details view) --- */
+.total_amount_detail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+/* --- Items Table --- */
+.items_view {
+  font-size: 20px;
+}
+
+.table_item_data {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table_item_data th,
+.table_item_data td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  text-align: left;
+}
+
+.table_item_data th {
+  background-color: #133b6a;
+  color: white;
+  font-weight: 600;
+}
+
+.table_item_data tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table_item_data tbody tr:hover {
+  background-color: #eef4fb;
+}
+
+/* --- Scrollable Display Box --- */
+.display_box1 {
+  margin-top: 20px;
+  overflow-y: auto;
+  max-height: 400px;
+  padding-left: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #b7b4b4 transparent;
+}
+
+.display_box1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.display_box1::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.display_box1::-webkit-scrollbar-thumb {
+  background-color: #b7b4b4;
+  border-radius: 4px;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+  nav.navbar_event_conference {
+    padding: 14px 24px;
+  }
+
+  .left_navbar {
+    gap: 30px;
+  }
+
+  .nav_links {
+    gap: 30px;
+  }
+
+  .nav_links a {
+    font-size: 18px;
+  }
+
+  .text h1 {
+    font-size: 28px;
+    padding: 14px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.navbar_event_conference {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .left_navbar {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav_links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav_links a {
+    font-size: 16px;
+  }
+
+  .company_logo {
+    font-size: 22px;
+  }
+
+  .details_button {
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+
+  .items-information {
+    padding: 20px 12px 60px;
+    gap: 60px;
+  }
+
+  .venue_main {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .text h1 {
+    font-size: 22px;
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+  .total_cost {
+    font-size: 20px;
+    padding: 10px 20px;
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav.navbar_event_conference {
+    padding: 10px 12px;
+  }
+
+  .nav_links {
+    gap: 12px;
+  }
+
+  .nav_links a {
+    font-size: 14px;
+  }
+
+  .left_navbar {
+    gap: 12px;
+  }
+
+  .company_logo {
+    font-size: 18px;
+  }
+
+  .venue_selection,
+  .addons_selection,
+  .meal_selection {
+    gap: 16px;
+  }
+
+  .venue_main {
+    padding: 14px;
+  }
+
+  .venue_main .img {
+    height: 140px;
+  }
+
+  .venue_main .text {
+    font-size: 16px;
+  }
+
+  .text h1 {
+    font-size: 18px;
+    padding: 10px 14px;
+  }
+}
+
